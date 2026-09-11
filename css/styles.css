@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'PressStart2p-Regular';
+    src: url(../fuentes/PressStart2P-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    font-family: Bahnschrift, Arial, Serif;
+
+}
+
+body{
+    background-color: #e4e4ed;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: "PressStart2p-Regular", "Copperplate Gothic Light", Serif;
+    font-weight: normal;
+}
+
+#formacion{
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+
+}
+
+#sobre-mi, #habilidades, #proyectos, #contacto{
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px lightgray;
+
+}
+
+.destacado{
+    background-color: lightblue;
+    padding: 15px;
+    border-left: 4px solid cornflowerblue;
+}
+
+.tabla th, .tabla td{
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: left;
+
+}
+
+.tabla th{
+    background-color: #0056b3;
+    color: white;
+}
