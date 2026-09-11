@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+:root{
+    --fondo-main: #eef2ff ;
+    --borde-main: #4f46e5;
+    --fondo-tarjetas: #f5f3ff;
+    --titulos: #6b21a8;
+    --borde-tarjetas: #a78bfa;
+}
 *{
     margin: 0;
     padding: 0;
@@ -48,7 +55,7 @@ main{
 header{
     height: 180px;
     width: 100%;
-    border: 3px solid #4f46e5;
+    border: 3px solid var(--borde-main);
     border-bottom: none;
     border-radius: 8px 6px 0 0;
 
@@ -63,10 +70,10 @@ h1{
     font-weight: normal;
     color: #1e1b4b;
     padding: 5px;
-    border: 2px dashed #4f46e5;
+    border: 2px dashed var(--borde-main);
     border-radius: 4px;
     border-bottom: none;
-    background-color: #eef2ff;
+    background-color: var(--fondo-main);
 }
 
 a{
@@ -91,21 +98,21 @@ a:hover{
 }
 
 nav{
-    border: 2px dashed #4f46e5;
+    border: 2px dashed var(--borde-main);
     border-bottom: none;
     margin-left: 50px;
     border-radius: 4px;
     padding-top: 5px;
-    background-color: #eef2ff;
+    background-color: var(--fondo-main);
 }
 
 section{
     padding: 18px;
     padding-top: 25px;
-    border: 2px dashed #4f46e5;
+    border: 2px dashed var(--borde-main);
     display: grid;
     grid-template-columns: 210px 1fr 200px;
-    background-color: #eef2ff;
+    background-color: var(--fondo-main);
     gap: 12px;
     height: auto;
 }
@@ -126,8 +133,8 @@ section{
 
 .tarjeta-sidebar{
     min-height: 100px;
-    background-color: #f5f3ff;
-    border: 2px solid #a78bfa;
+    background-color: var(--fondo-tarjetas);
+    border: 2px solid var(--borde-tarjetas);
     border-radius: 4px;
     box-shadow: 3px 3px 2px #c7d2fe;
     margin-bottom: 20px;
@@ -135,7 +142,7 @@ section{
 
 .tarjeta-principal{
     min-height: 200px;
-    background-color: #f5f3ff;
+    background-color: var(--fondo-tarjetas);
     border: 2px solid #ddd6fe;
     border-radius: 4px;
     box-shadow: 3px 3px 2px #c7d2fe;
@@ -143,7 +150,7 @@ section{
 }
 
 .tarjeta-principal:hover{
-    border-color: #a78bfa;
+    border-color: var(--borde-tarjetas);
 
 }
 
@@ -155,7 +162,7 @@ section{
     padding-bottom: 4px;
     background-color: #c4b5fd;
     font-family: "PressStart2p-Regular", Arial, serif;
-    color: #6b21a8;
+    color: var(--titulos);
     font-size: 14px;
 }
 
@@ -168,7 +175,7 @@ section{
     padding-top: 10px;
     font-family: PressStart2p-Regular, Arial, Serif;
     font-size: 13px;
-    color: #6b21a8;
+    color: var(--titulos);
 
 }
 
@@ -182,7 +189,7 @@ section{
 
 .tabla-info td{
     padding: 6px 8px;
-    border-bottom: 1px dashed #a78bfa;
+    border-bottom: 1px dashed var(--borde-tarjetas);
 }
 
 .tabla-info td:first-child{
@@ -211,7 +218,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px dashed #a78bfa;
+    border-bottom: 1px dashed var(--borde-tarjetas);
     text-decoration: none;
     transition: transform 0.1s ease;
 }
@@ -234,7 +241,7 @@ section{
     font-size: 18px;
     padding-top: 8px;
     padding-bottom: 8px;
-    color: #6b21a8;
+    color: var(--titulos);
 }
 
 .tarjeta-body{
@@ -269,7 +276,7 @@ h4{
     font-family: "PressStart2p-Regular", "Copperplate Gothic Light", Arial;
     font-size: 14px;
     font-weight: normal;
-    color: #6b21a8;
+    color: var(--titulos);
     margin-bottom: 8px;
 }
 
@@ -326,7 +333,7 @@ h4{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border-bottom: 2px dashed #a78bfa;
+    border-bottom: 2px dashed var(--borde-tarjetas);
 }
 
 
@@ -371,8 +378,8 @@ em{
 footer{
     margin-top: 30px;
     margin-bottom: 50px;
-    border: 2px dashed #4f46e5;
-    background-color: #eef2ff;
+    border: 2px dashed var(--borde-main);
+    background-color: var(--fondo-main);
     height: 140px;
     width: 55vw;
     min-width: 800px;
